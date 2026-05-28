@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Rizzi Refrigeração | Ar-Condicionado em Petrópolis{% endblock %}</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Verdana', 'sans-serif'],
+                        'heading': ['"Trebuchet MS"', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-blue': '#1e3a8a',
+                        'brand-light-blue': '#2563eb',
+                        'brand-green': '#10b981',
+                        'brand-dark': '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Aplicando a fonte de títulos globalmente para tags h1 a h6 */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
